@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="3" total="7" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-18T04:28:02Z" name="OrangeHRM_Test_Suite" finished-at="2024-05-18T04:28:53Z" duration-ms="51316">
+    <groups>
+    </groups>
+    <test started-at="2024-05-18T04:28:02Z" name="AdminPageTest" finished-at="2024-05-18T04:28:53Z" duration-ms="51316">
+      <class name="testCases.AdminPageTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testCases.AdminPageTest@14d3bc22]" started-at="2024-05-18T09:57:54Z" name="beforeSuite" finished-at="2024-05-18T09:58:02Z" duration-ms="7343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method signature="launchURL()[pri:0, instance:testCases.AdminPageTest@14d3bc22]" started-at="2024-05-18T09:58:02Z" name="launchURL" finished-at="2024-05-18T09:58:26Z" duration-ms="24295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method signature="pageLogin()[pri:0, instance:testCases.AdminPageTest@14d3bc22]" started-at="2024-05-18T09:58:26Z" name="pageLogin" finished-at="2024-05-18T09:58:41Z" depends-on-methods="testCases.AdminPageTest.launchURL" duration-ms="15380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageLogin -->
+        <test-method signature="clickLocations()[pri:0, instance:testCases.AdminPageTest@14d3bc22]" started-at="2024-05-18T09:58:41Z" name="clickLocations" finished-at="2024-05-18T09:58:47Z" depends-on-methods="testCases.AdminPageTest.pageLogin" duration-ms="5949" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickLocations -->
+        <test-method signature="editGeneralInformation()[pri:0, instance:testCases.AdminPageTest@14d3bc22]" started-at="2024-05-18T09:58:47Z" name="editGeneralInformation" finished-at="2024-05-18T09:58:53Z" depends-on-methods="testCases.AdminPageTest.pageLogin" duration-ms="5652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editGeneralInformation -->
+      </class> <!-- testCases.AdminPageTest -->
+    </test> <!-- AdminPageTest -->
+  </suite> <!-- OrangeHRM_Test_Suite -->
+</testng-results>
