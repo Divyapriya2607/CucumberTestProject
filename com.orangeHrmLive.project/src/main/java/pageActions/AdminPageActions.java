@@ -37,7 +37,6 @@ public class AdminPageActions {
 	public void select_UserRole() {
 		bc.click(userPage.textBox_UserRole);
 		bc.click(userPage.dropdown_UserRole);
-
 	}
 
 	public void select_Status() {
