@@ -63,7 +63,7 @@ public class AdminDefinition {
 	@When("enters the save button")
 	public void enters_the_save_button() {
 	    // Write code here that turns the phrase above into concrete actions
-	    
+	    adminPage.click_Save();
 	}
 
 	@Then("the user navigates to the user Page")

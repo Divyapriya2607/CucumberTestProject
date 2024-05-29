@@ -78,7 +78,9 @@ public class AdminPageActions {
 	public void click_Search() {
 		bc.click(userPage.button_Search);
 	}
-
+	public void click_Save() {
+		bc.click(userPage.button_save);
+	}
 	public void click_Edit() {
 		bc.scrollBy();
 		// bc.mouseHoverAction(userPage.icon_Edit);

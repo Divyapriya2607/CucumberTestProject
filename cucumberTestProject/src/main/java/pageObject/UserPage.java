@@ -34,6 +34,9 @@ public class UserPage {
 
 	@FindBy(xpath = "(//div[contains(@class,'oxd-input-group')]//input)[4]")
 	public WebElement textBox_ConfirmPassword;
+			
+	@FindBy(xpath="//button[@type='submit']")
+	public WebElement button_save;
 	
 	@FindBy(xpath="(//form[@class='oxd-form']/child::div[2]//button[2])[1]")
 	public WebElement button_Search;
