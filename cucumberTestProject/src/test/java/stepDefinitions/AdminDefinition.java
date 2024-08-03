@@ -47,7 +47,7 @@ public class AdminDefinition {
 	    // Write code here that turns the phrase above into concrete actions
 		adminPage.enter_UserName("Username123");
 	}
-	@When("user is typing the password {string}")
+	@When("user is typing the Password {string}")
 	public void user_is_typing_the_password(String password) {
 	    // Write code here that turns the phrase above into concrete actions
 		adminPage.enter_Password(password);

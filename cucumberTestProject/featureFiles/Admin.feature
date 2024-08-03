@@ -23,7 +23,7 @@ Scenario: Add User scenario
 	And user is typing the Employee Name "Employee1"
 	And user is selecting Status "Enabled"
 	And user is typing the Username "testusername"
-	And user is typing the password "testuser123"
+	And user is typing the Password "testuser123"
 	And user is typing the confirm password "testuser123"
 	And enters the save button
 	Then the user navigates to the user Page
