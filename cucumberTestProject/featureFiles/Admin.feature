@@ -47,3 +47,4 @@ Feature: This is to test Admin feature
   	And user is typing Fax "12A"
   	And user is typing Email "abc@gmail.com"
   	And user is typing Address Street1 "538 Teal Plaza"
+		And user is typing Address Street2 "Mysore"
