@@ -46,3 +46,4 @@ Feature: This is to test Admin feature
   	And user is typing Phone "9734859343"
   	And user is typing Fax "12A"
   	And user is typing Email "abc@gmail.com"
+  	And user is typing Address Street1 "538 Teal Plaza"
