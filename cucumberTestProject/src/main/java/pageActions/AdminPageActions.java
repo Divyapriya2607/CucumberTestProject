@@ -11,7 +11,7 @@ import utility.BaseClass;
 
 public class AdminPageActions {
 
-	LoginPage loginPage;
+//	LoginPage loginPage;
 	BaseClass bc;
 	AdminPage adminPage;
 	UserPage userPage;
@@ -20,7 +20,7 @@ public class AdminPageActions {
 	public AdminPageActions(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		bc = new BaseClass(driver);
-		loginPage = new LoginPage(driver);
+//		loginPage = new LoginPage(driver);
 		adminPage = new AdminPage(driver);
 		userPage = new UserPage(driver);
 		organisationPage = new OrganisationPage(driver);

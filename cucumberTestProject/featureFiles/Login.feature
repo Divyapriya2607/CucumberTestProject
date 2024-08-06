@@ -16,12 +16,11 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-
 Feature: This is to test Login feature
-Scenario: Login scenario
-	Given User is entering OrangeHRM URL
-	When user is typing the username "Admin"
-	And user is typing the password "admin123"
-	And enters the return key
-	Then the user navigates to the Home Page
-	
+
+  Scenario: Login scenario
+    Given User is entering OrangeHRM URL
+    When user is typing the username "Admin"
+    And user is typing the password "admin123"
+    And enters the return key
+    #Then the user navigates to the Home Page

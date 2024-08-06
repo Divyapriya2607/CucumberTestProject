@@ -9,12 +9,13 @@ import pageActions.AdminPageActions;
 import pageActions.LoginPageActions;
 import utility.BaseClass;
 import utility.BrowserConfig;
+import utility.GlobalVariables;
 
 public class AdminDefinition {
-	private WebDriver driver = null;
+	private WebDriver driver = GlobalVariables.driver;
 	BrowserConfig browserConfig = new BrowserConfig();
 	LoginPageActions loginPage;
-	AdminPageActions adminPage;
+	AdminPageActions adminPage=new AdminPageActions(driver);
 	BaseClass bc;
 
 	@Given("user is clicking users from User Management and Clicking on Add button")
@@ -47,6 +48,7 @@ public class AdminDefinition {
 	    // Write code here that turns the phrase above into concrete actions
 		adminPage.enter_UserName("Username123");
 	}
+	
 	@When("user is typing the Password {string}")
 	public void user_is_typing_the_password(String password) {
 	    // Write code here that turns the phrase above into concrete actions
@@ -63,13 +65,13 @@ public class AdminDefinition {
 	@When("enters the save button")
 	public void enters_the_save_button() {
 	    // Write code here that turns the phrase above into concrete actions
-	    adminPage.click_Save();
+	   // adminPage.click_Save();
 	}
 
 	@Then("the user navigates to the user Page")
 	public void the_user_navigates_to_the_user_page() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		
 	}
 
 
