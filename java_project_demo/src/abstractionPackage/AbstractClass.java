@@ -5,7 +5,9 @@ abstract class TestFunc {
 	static final int number=100;
 
 	abstract void abstractMethod();
-
+	
+	abstract void abstractMethod2();
+	
 	void testResult() {
 		System.out.println("Non-abstract method");
 	}
@@ -24,10 +26,26 @@ abstract class TestFunc {
 
 }
 
+class ClassT extends TestFunc{
+
+	void abstractMethod() {
+		System.out.println("Abstract method1");
+	}
+	
+	void abstractMethod2() {
+		System.out.println("Abstract method2");
+	}
+	
+}
+
 class TestClass extends TestFunc {
 
 	void abstractMethod() {
 		System.out.println("Abstract method");
+	}
+	
+	void abstractMethod2() {
+		System.out.println("Abstract method2");
 	}
 
 //	void methodFinal() {
@@ -40,11 +58,14 @@ public class AbstractClass {
 
 	public static void main(String[] args) {
 		TestFunc tf = new TestClass();
+		TestClass tc=new TestClass();
+//		tf.abstractMethod();
+		tc.abstractMethod();
 		tf.abstractMethod();
-		tf.testResult();
-		TestFunc.methodStatic();
+//		tf.testResult();
+//		TestFunc.methodStatic();
 //		tf.methodStatic();
-		tf.methodFinal();
+//		tf.methodFinal();
 	}
 
 }
