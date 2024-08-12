@@ -53,3 +53,5 @@ Feature: This is to test Admin feature
 		And user is typing Zip/Postal Code="51246"
 		And user is typing Country="United states"
 		And user is typing Notes="HRM Software"
+		And clicks the save button
+		
