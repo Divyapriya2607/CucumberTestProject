@@ -49,3 +49,5 @@ Feature: This is to test Admin feature
   	And user is typing Address Street1 "538 Teal Plaza"
 		And user is typing Address Street2 "Mysore"
 		And user is typing City "Secaucus"
+		And user is typing State/Province="NJ"
+		And user is typing Zip/Postal Code="51246"
