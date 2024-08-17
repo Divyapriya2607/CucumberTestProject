@@ -6,7 +6,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="featureFiles/expressions.feature",glue="stepDefinitions")
+@CucumberOptions(features="featureFiles/loginWithData.feature",glue="stepDefinitions")
 
 public class RunnerClass {
 
