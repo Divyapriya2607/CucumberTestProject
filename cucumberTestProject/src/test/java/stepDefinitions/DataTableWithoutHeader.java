@@ -1,6 +1,7 @@
 package stepDefinitions;
 
 import java.util.List;
+import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
 
@@ -36,11 +37,11 @@ public class DataTableWithoutHeader {
 	    // Double, Byte, Short, Long, BigInteger or BigDecimal.
 	    //
 	    // For other transformations you can register a DataTableType.
-		List<String> credentials=dataTable.asList(String.class);
-		String userName=credentials.get(0);
-		String passWord=credentials.get(1);
+		List<List<String>> credentials=dataTable.asLists(String.class);
+		String userName=credentials.get(0).toString();
+//		String passWord=credentials.get(1).toString();
 		loginPage.enter_Username(userName);
-		loginPage.enter_Password(passWord); 
+//		loginPage.enter_Password(passWord); 
 	}
 	@When("^click the login button$")
 	public void click_the_login_button() throws InterruptedException {
